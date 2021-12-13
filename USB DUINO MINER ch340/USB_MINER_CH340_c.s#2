@@ -4970,12 +4970,10 @@ Standard 6 pin header for AVR programming</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 <class number="1" name="Power" width="0.508" drill="0">
-<clearance class="1" value="0.254"/>
+<clearance class="1" value="0.4064"/>
 </class>
 <class number="2" name="signal" width="0.4064" drill="0">
-<clearance class="2" value="0.254"/>
-</class>
-<class number="3" name="smds" width="0" drill="0">
+<clearance class="2" value="0.4064"/>
 </class>
 </classes>
 <parts>
@@ -5258,7 +5256,7 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="96.52" y1="210.82" x2="86.36" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="3">
+<net name="N$10" class="2">
 <segment>
 <pinref part="U1" gate="U1" pin="PB7(XTAL2/TOSC2)"/>
 <pinref part="Y1" gate="G$1" pin="1"/>

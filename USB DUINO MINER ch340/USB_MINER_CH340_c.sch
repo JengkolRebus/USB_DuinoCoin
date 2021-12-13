@@ -4975,6 +4975,8 @@ Standard 6 pin header for AVR programming</description>
 <class number="2" name="signal" width="0.4064" drill="0">
 <clearance class="2" value="0.4064"/>
 </class>
+<class number="3" name="smds" width="0" drill="0">
+</class>
 </classes>
 <parts>
 <part name="U$28" library="MyPOW" deviceset="COM" device=""/>
@@ -5122,6 +5124,12 @@ Standard 6 pin header for AVR programming</description>
 <pinref part="U1" gate="U1" pin="PB5(SCK)"/>
 <wire x1="139.7" y1="177.8" x2="147.32" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="177.8" x2="147.32" y2="162.56" width="0.1524" layer="91"/>
+<label x="147.32" y="165.1" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="ISP1" gate="G$1" pin="SCK"/>
+<wire x1="83.82" y1="124.46" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
+<label x="76.2" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="COM" class="1">
@@ -5250,7 +5258,7 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="96.52" y1="210.82" x2="86.36" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="2">
+<net name="N$10" class="3">
 <segment>
 <pinref part="U1" gate="U1" pin="PB7(XTAL2/TOSC2)"/>
 <pinref part="Y1" gate="G$1" pin="1"/>
@@ -5345,6 +5353,11 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="111.76" y1="124.46" x2="119.38" y2="124.46" width="0.1524" layer="91"/>
 <label x="114.3" y="124.46" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="U1" pin="PB3(COPI/OC2)"/>
+<wire x1="139.7" y1="182.88" x2="147.32" y2="182.88" width="0.1524" layer="91"/>
+<label x="144.78" y="182.88" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
@@ -5352,12 +5365,10 @@ Standard 6 pin header for AVR programming</description>
 <wire x1="83.82" y1="127" x2="76.2" y2="127" width="0.1524" layer="91"/>
 <label x="76.2" y="127" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="SCK" class="0">
 <segment>
-<pinref part="ISP1" gate="G$1" pin="SCK"/>
-<wire x1="83.82" y1="124.46" x2="76.2" y2="124.46" width="0.1524" layer="91"/>
-<label x="76.2" y="124.46" size="1.778" layer="95"/>
+<pinref part="U1" gate="U1" pin="PB4(CIPO)"/>
+<wire x1="139.7" y1="180.34" x2="147.32" y2="180.34" width="0.1524" layer="91"/>
+<label x="144.78" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
