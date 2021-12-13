@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -193,7 +193,7 @@
 <wire x1="33.706" y1="25.39" x2="0" y2="25.39" width="0" layer="20"/>
 <wire x1="0" y1="25.39" x2="0" y2="0" width="0" layer="20"/>
 <dimension x1="0" y1="-3.81" x2="33.02" y2="-3.81" x3="16.51" y3="-5.08" textsize="1.778" layer="1"/>
-<text x="31.75" y="3.175" size="1.778" layer="1" font="vector" rot="R90">USBDUINO V.1.0</text>
+<text x="31.75" y="3.81" size="1.778" layer="1" font="vector" rot="R90">USBDUINO V1.0</text>
 <dimension x1="38.1" y1="0" x2="38.1" y2="25.4" x3="39.37" y3="12.7" textsize="1.778" layer="1" dtype="vertical"/>
 </plain>
 <libraries>
@@ -607,7 +607,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="Power" width="0.4064" drill="0">
+<class number="1" name="Power" width="0.3556" drill="0">
 <clearance class="1" value="0.3048"/>
 </class>
 <class number="2" name="signal" width="0.254" drill="0">

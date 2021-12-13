@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -2609,13 +2609,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="0" name="default" width="0" drill="0">
 </class>
 <class number="1" name="Power" width="0.4064" drill="0">
-<clearance class="1" value="0.3048"/>
+<clearance class="1" value="0.4064"/>
 </class>
-<class number="2" name="signal" width="0.254" drill="0">
-<clearance class="2" value="0.254"/>
-</class>
-<class number="3" name="gnd" width="0" drill="0">
-<clearance class="3" value="0.254"/>
+<class number="2" name="signal" width="0.4064" drill="0">
+<clearance class="2" value="0.4064"/>
 </class>
 </classes>
 <parts>
@@ -2784,7 +2781,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="147.32" y1="177.8" x2="147.32" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="COM" class="3">
+<net name="COM" class="1">
 <segment>
 <wire x1="342.9" y1="170.18" x2="347.98" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="170.18" x2="347.98" y2="175.26" width="0.1524" layer="91"/>
@@ -3020,6 +3017,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,236.22,160.02,IC1,AGND,COM,,,"/>
+<approved hash="104,1,236.22,157.48,IC1,GND1,COM,,,"/>
+<approved hash="104,1,236.22,154.94,IC1,GND2,COM,,,"/>
+<approved hash="104,1,236.22,152.4,IC1,GND3,COM,,,"/>
+<approved hash="104,1,271.78,193.04,IC1,VCC,+5V,,,"/>
+<approved hash="104,1,236.22,185.42,IC1,VCCIO,+5V,,,"/>
+<approved hash="104,1,309.88,157.48,J1,VBUS,+5V,,,"/>
+<approved hash="104,1,309.88,147.32,J1,GND,COM,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
